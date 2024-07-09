@@ -450,3 +450,16 @@ footer a {
     display: none;
   }
 }
+@media screen and (min-width: 700px) {
+  .fa-calendar-days {
+    color: #0080a0;
+    bottom: 17.7em;
+    z-index: 1000;
+  }
+
+  .fa-square-plus {
+    color: #0080a0;
+    bottom: 20.7em;
+    z-index: 1000;
+  }
+}
