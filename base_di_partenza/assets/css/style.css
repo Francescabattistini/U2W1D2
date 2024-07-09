@@ -361,6 +361,30 @@ aside div p:last-child {
   font-size: 0.8em;
   text-align: right;
 }
+.fa-square-caret-up,
+.fa-calendar-days,
+.fa-square-plus {
+  font-size: 40px;
+  background-color: #ffffffa6;
+  backdrop-filter: blur(2px);
+  position: fixed;
+  right: -7px;
+  bottom: 0.3em;
+  padding: 0.35em;
+  outline: 2px solid white;
+  color: #f94d4d;
+  border-radius: 19px;
+  box-shadow: 0px 0px 24px 1px rgba(0, 0, 0, 0.105);
+}
+.fa-calendar-days {
+  color: #0080a0;
+  bottom: 3em;
+}
+
+.fa-square-plus {
+  color: #0080a0;
+  bottom: 5.7em;
+}
 
 /* FOOTER */
 footer {
