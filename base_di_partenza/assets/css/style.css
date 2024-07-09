@@ -19,7 +19,11 @@ hr {
 /* HEADER */
 header {
   background: rgb(0, 160, 198);
-  background: linear-gradient(180deg, rgba(0, 160, 198, 1) 0%, rgba(3, 109, 134, 1) 68%);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 160, 198, 1) 0%,
+    rgba(3, 109, 134, 1) 68%
+  );
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
@@ -27,6 +31,9 @@ header {
   box-shadow: 0 3px 3px #444;
   margin-bottom: 1.5em;
   padding: 2em 1.5em;
+  position: sticky;
+  top: 0;
+  z-index: 91;
 }
 
 @media screen and (min-width: 800px) {
@@ -112,6 +119,11 @@ section h2 {
   font-weight: bold;
   background-color: #a3a3a3;
   padding: 0px 1em;
+  position: absolute;
+  display: block;
+  top: -8%;
+  left: 5%;
+  box-shadow: 1px 1px 1px #000000aa;
 }
 
 /* ELEMENTI NEL MAIN - ARTICLE */
@@ -135,6 +147,21 @@ blockquote {
 
 h1 + p {
   color: #a0a0a0;
+}
+h1 span {
+  display: inline-block;
+}
+#title {
+  position: relative;
+  display: inline;
+}
+
+#underline {
+  width: 100%;
+  position: absolute;
+  top: 95%;
+  right: 0%;
+  opacity: 60%;
 }
 
 @media screen and (max-width: 499px) {
@@ -171,6 +198,9 @@ h1 + p {
   h1 {
     font-size: 3.6rem;
   }
+  #underline {
+    top: 99%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -180,6 +210,11 @@ h1 + p {
   section {
     border-radius: 20px;
   }
+  #underline {
+    width: 53%;
+    top: 90%;
+    left: 32%;
+  }
 }
 
 .imgLeft {
@@ -187,6 +222,7 @@ h1 + p {
   border: 4px solid #00a0c6;
   outline: 4px solid #a02571;
   padding: 3px;
+  float: left;
 }
 ul,
 ol {
@@ -329,7 +365,11 @@ aside div p:last-child {
 /* FOOTER */
 footer {
   background: rgb(53, 53, 53);
-  background: linear-gradient(0deg, rgba(53, 53, 53, 1) 0%, rgba(5, 85, 103, 1) 68%);
+  background: linear-gradient(
+    0deg,
+    rgba(53, 53, 53, 1) 0%,
+    rgba(5, 85, 103, 1) 68%
+  );
   box-shadow: 0 3px 3px #444;
   color: #f0f0f0;
   padding: 1em;
